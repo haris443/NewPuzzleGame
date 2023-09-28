@@ -1,0 +1,268 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &264368132817812276
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4099729612151180385}
+  - component: {fileID: 2389012549045868863}
+  m_Layer: 0
+  m_Name: AdMobAds
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4099729612151180385
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 264368132817812276}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7256076628922023796}
+  m_RootOrder: -2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2389012549045868863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 264368132817812276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97eba65eee54ef046b3064c8622d7df4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  testAds: 1
+  androidAppOpenAd: 
+  androidBannerAd: ca-app-pub-5300096329158377/2483174673
+  androidInterstitialAd: ca-app-pub-5300096329158377/1888278306
+  androidRewardedAd: ca-app-pub-5300096329158377/6949033297
+  androidRewardedInterstitialAd: 
+  androidNativeAd: 
+  IOSAppOpenAd: 
+  IOSBannerAd: 
+  IOSInterstitialAd: 
+  IOSRewardedAd: 
+  IOSRewardedInterstitialAd: 
+  IOSNativeAd: 
+  _androidAppOpenAdId: ca-app-pub-3940256099942544/5662855259
+  _androidBannerAdId: ca-app-pub-3940256099942544/2934735716
+  _androidInterstitialAdId: ca-app-pub-3940256099942544/4411468910
+  _androidRewardedAdId: ca-app-pub-3940256099942544/1712485313
+  _androidRewardedInterstitialAdId: ca-app-pub-3940256099942544/5354046379
+  _androidNativeAdId: ca-app-pub-3940256099942544/3986624511
+  _IOSAppOpenAdId: ca-app-pub-3940256099942544/5662855259
+  _IOSBannerAdId: ca-app-pub-3940256099942544/2934735716
+  _IOSInterstitialAdId: ca-app-pub-3940256099942544/4411468910
+  _IOSRewardedAdId: ca-app-pub-3940256099942544/1712485313
+  _IOSRewardedInterstitialAdId: ca-app-pub-3940256099942544/6978759866
+  _IOSNativeAdId: ca-app-pub-3940256099942544/3986624511
+  bannerAdInitialPosition: 1
+--- !u!1 &2205923149073071785
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7256076628922023796}
+  - component: {fileID: 4402541612354828810}
+  m_Layer: 0
+  m_Name: AdsManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7256076628922023796
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2205923149073071785}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4099729612151180385}
+  - {fileID: 7778593882126510911}
+  - {fileID: 6988378852735660363}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4402541612354828810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2205923149073071785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4cc344e7eaa88f49be86018c6ddb492, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manageAdsHeirarchies:
+  - adScenes: 0
+    bannerPosition: 1
+    adListing:
+    - adsCount: 1
+      firstCallAdType: 1
+      adCall:
+      - firstCall: 2
+        secondCallAdType: 0
+        secondCall: 
+      - firstCall: 3
+        secondCallAdType: 1
+        secondCall: 
+      - firstCall: 1
+        secondCallAdType: 1
+        secondCall: 
+  - adScenes: 1
+    bannerPosition: 1
+    adListing:
+    - adsCount: 1
+      firstCallAdType: 1
+      adCall:
+      - firstCall: 2
+        secondCallAdType: 1
+        secondCall: 
+      - firstCall: 3
+        secondCallAdType: 1
+        secondCall: 
+      - firstCall: 1
+        secondCallAdType: 1
+        secondCall: 
+  - adScenes: 2
+    bannerPosition: 1
+    adListing:
+    - adsCount: 1
+      firstCallAdType: 0
+      adCall:
+      - firstCall: 2
+        secondCallAdType: 0
+        secondCall: 
+      - firstCall: 3
+        secondCallAdType: 0
+        secondCall: 
+      - firstCall: 1
+        secondCallAdType: 0
+        secondCall: 
+  bannerPosition: 0
+--- !u!1 &4019617731107039261
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6988378852735660363}
+  - component: {fileID: 8617002769720681483}
+  m_Layer: 0
+  m_Name: FAN
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6988378852735660363
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4019617731107039261}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7256076628922023796}
+  m_RootOrder: -2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8617002769720681483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4019617731107039261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f532ba83cd7483945aaae90a6e3ba587, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  testAds: 1
+  interstitialAndroid: 777996197413167_777996697413117
+  rewardedAndroid: 777996197413167_777996874079766
+  bannerAndroid: 777996197413167_777996540746466
+--- !u!1 &5398164007057299797
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7778593882126510911}
+  - component: {fileID: 3102664251490808724}
+  m_Layer: 0
+  m_Name: unityADS
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7778593882126510911
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5398164007057299797}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7256076628922023796}
+  m_RootOrder: -2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3102664251490808724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5398164007057299797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f178009158613e419769e67910c3dd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  testAds: 1
+  androidGameID: 5428247
+  IOSGameID: 
+  unityAndroidInterstitialAdId: Interstitial_Android
+  unityAndroidRewardedAdId: Rewarded_Android
+  unityAndroidBannerAdId: Banner_Android
+  unityIOSInterstitialAdId: Interstitial_iOS
+  unityIOSRewardedAdId: Rewarded_iOS
+  unityIOSBannerAdId: Banner_iOS
+  _bannerPosition: 4
