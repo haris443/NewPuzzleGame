@@ -106,7 +106,7 @@ public class GameManger : MonoBehaviour
         ImageEnlargeOnGameOver();
         yield return new WaitForSeconds(4f);
 
-        AdsManager.Instance.ShowAd(AdScenes.LevelComplete.ToString());
+      //  AdsManager.Instance.ShowAd(AdScenes.LevelComplete.ToString());
 
         imgParnet.SetActive(false);
         WinPanel.SetActive(true);
@@ -132,12 +132,12 @@ public class GameManger : MonoBehaviour
     public void RewardedHint()
     {
         rewardType =  RewardTypes.SlideHint;
-        AdsManager.Instance.ShowAd(AdScenes.RewardAdButton.ToString());
+       // AdsManager.Instance.ShowAd(AdScenes.RewardAdButton.ToString());
     }
     public void RewardedQM()
     {
         rewardType = RewardTypes.QmHint;
-        AdsManager.Instance.ShowAd(AdScenes.RewardAdButton.ToString());
+       // AdsManager.Instance.ShowAd(AdScenes.RewardAdButton.ToString());
     }
     void EnablingRewardedHint()
     {
@@ -205,7 +205,7 @@ public class GameManger : MonoBehaviour
 
             for (int i = 0; i < SpriteDivider.totalPieces; i++)
             {
-                DraggingPieces draggingPieces = spriteDivider.pieceList[i].GetComponent<DraggingPieces>();
+                DragingPieces draggingPieces = spriteDivider.pieceList[i].GetComponent<DragingPieces>();
 
                 if (!draggingPieces.DontMove)
                 {

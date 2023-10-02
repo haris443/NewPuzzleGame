@@ -3,9 +3,9 @@ using DG.Tweening;
 using System.Collections;
 using System.Threading.Tasks;
 
-public class DraggingPieces : MonoBehaviour
+public class DragingPieces : MonoBehaviour
 {
-    public static DraggingPieces instance;
+    public static DragingPieces instance;
     private bool isDragging = false;
     public bool check = true;
     public bool DontMove = false;
@@ -85,7 +85,7 @@ public class DraggingPieces : MonoBehaviour
         isDragging = false;
         
         RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.zero);
-        if (hit.collider != null && hit.collider.CompareTag("tiles") && hit.collider.gameObject != gameObject && this.DontMove ==false && hit.collider.gameObject.GetComponent<DraggingPieces>().DontMove == false)
+        if (hit.collider != null && hit.collider.CompareTag("tiles") && hit.collider.gameObject != gameObject && this.DontMove ==false && hit.collider.gameObject.GetComponent<DragingPieces>().DontMove == false)
         {
             audioSource.PlayOneShot(swapSound);
             boxCollider.enabled = false;

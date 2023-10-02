@@ -180,7 +180,7 @@ public class SpriteDivider : MonoBehaviour
        // Debug.Log("MakingFalseCheckInPiece");
         for (int i = 0; i < totalPieces; i++)
         {
-           pieceList[i].GetComponent<DraggingPieces>().check = false;  
+           pieceList[i].GetComponent<DragingPieces>().check = false;  
            pieceList[i].GetComponent<BoxCollider2D>().enabled = true;  
         }
 
